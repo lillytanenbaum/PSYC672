@@ -1,8 +1,26 @@
 \section{Introduction}
+Digital emotion regulation (ER) is becoming particularly important as people spend more time in digital spaces \citep{hollensteinreview2024}. Because adolescents have extensive access to technology and a strong interest in socialization, it is especially important to study their technology use \citep{orben2020review}. \citet{hollensteinreview2024} introduced a model of emotion regulation focused on adolescents (but applicable for all ages) that applies existing models of ER to an increasingly digital world. In their model, emotions can be induced in digital or non-digital ways and regulated in digital or non-digital ways (see Figure~\ref{fig:TikZpicture}). 
+\begin{center}
+    \begin{figure}
+        \centering
+        \caption{Digital ER as modeled by Hollenstein and Faulkner (2024).}
+        \label{fig:TikZpicture}
+    \begin{tikzpicture}[scale=1,transform shape,auto,node distance= 1 cm,
+latent/.style={circle,draw,very thick,inner sep=0pt,minimum size=25mm,align=center},
+manifest/.style={rectangle,draw,very thick,inner sep=0pt,minimum width=30mm,minimum height=10mm},
+paths/.style={->, ultra thick, >=stealth'}]
+\node[draw, align=center, minimum width=0.7cm, inner sep=2pt](1) at (0,0){Digitally \\Induced Emotion};
+\node[draw, align = center, minimum width=0.7cm, inner sep=2pt](2)[right= of 1]{Digital\\ Emotion Regulation};
+\node[draw, align=center, minimum width=0.7cm, inner sep=2pt](3) [below=of 1]{Non-Digitally\\ Induced Emotion};
+\node[draw, align=center, minimum width=0.7cm, inner sep=2pt](4)[right=of 3]{Non-Digital \\Emotion Regulation};
+\path[->, thick](1)edge(2);
+\path[->, thick](3)edge(4);
+\path[->, thick](1)edge(4);
+\path[->, thick](3)edge(2);
+\end{tikzpicture}
+  \end{figure}
+\end{center}
+More research is needed to test and apply this model. In measuring social media usage, researchers distinguish between passive and active social media use. Passive use (scrolling) is associated with worse mental health outcomes than active use (posting) in adolescents \citep{Thorisdottir}. We hypothesized that identification with passive social media use will be linked to poorer emotion regulation skills and increased use of \textit{digital} ER as compared to active social media use. (This is just a preliminary hypothesis for the purposes of this assignment).
 
-Your introduction goes here.  You might talk about previous work on cognitive deficits in schizophrenia \citep{brenner2014role}. Or you might want to explain how you used the Student \citet{student1908probable} \textit{t} distribution and present the formula you used to do significance testing for a correlation (see equation \ref{eq1}).
-\begin{equation} \label{eq1}
-t=\frac{r_{xy} \sqrt{n-2}}{ \sqrt{1-r^{2}_{xy}}}
-\end{equation}
 
-\blindtext
+
